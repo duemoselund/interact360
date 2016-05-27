@@ -91,6 +91,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="Google.ProtocolBuffers">
+      <HintPath>Assets\Plugins\Google.ProtocolBuffers.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Interact360.CSharp.csproj">
@@ -99,30 +102,23 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Cardboard\Editor\CardboardAudioListenerEditor.cs" />
-    <Compile Include="Assets\Cardboard\Editor\CardboardAudioRoomEditor.cs" />
-    <Compile Include="Assets\Cardboard\Editor\CardboardAudioSourceEditor.cs" />
-    <Compile Include="Assets\Cardboard\Editor\CardboardEditor.cs" />
-    <Compile Include="Assets\Cardboard\Editor\CardboardGazeEditor.cs" />
-    <Compile Include="Assets\Cardboard\Editor\CardboardMenu.cs" />
-    <Compile Include="Assets\Cardboard\Editor\CardboardSetup.cs" />
-    <Compile Include="Assets\Cardboard\Editor\StereoControllerEditor.cs" />
-    <Compile Include="Assets\MobileMovieTexture\Editor\StreamingAssetsLinkDrawer.cs" />
-    <Compile Include="Assets\MobileMovieTexture\Editor\YCbCrDrawer.cs" />
-    <Compile Include="Assets\MobileMovieTexture\Editor\YCbCrPriority.cs" />
+    <Compile Include="Assets\GoogleVR\Editor\GvrAudioListenerEditor.cs" />
+    <Compile Include="Assets\GoogleVR\Editor\GvrAudioRoomEditor.cs" />
+    <Compile Include="Assets\GoogleVR\Editor\GvrAudioSourceEditor.cs" />
+    <Compile Include="Assets\GoogleVR\Editor\GvrGazeEditor.cs" />
+    <Compile Include="Assets\GoogleVR\Editor\GvrMenu.cs" />
+    <Compile Include="Assets\GoogleVR\Editor\GvrViewerEditor.cs" />
+    <Compile Include="Assets\GoogleVR\Editor\StereoControllerEditor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Cardboard\Distortion\CardboardDistortion.cginc" />
-    <None Include="Assets\Cardboard\Resources\SolidColor.shader" />
-    <None Include="Assets\Cardboard\Resources\UI\CardboardReticleShader.shader" />
-    <None Include="Assets\Cardboard\Resources\UnlitTexture.shader" />
-    <None Include="Assets\MobileMovieTexture\Instructions.txt" />
-    <None Include="Assets\MobileMovieTexture\Shaders\YCbCrtoRGB.cginc" />
-    <None Include="Assets\MobileMovieTexture\Shaders\YCrCbtoRGB.shader" />
-    <None Include="Assets\MobileMovieTexture\Shaders\YCrCbtoRGBChromaKey.shader" />
-    <None Include="Assets\MobileMovieTexture\Shaders\YCrCbtoRGBSplitAlpha.shader" />
-    <None Include="Assets\MobileMovieTexture\Shaders\YCrCbtoRGBTrans.shader" />
-    <None Include="Assets\MobileMovieTexture\legal.txt" />
+    <None Include="Assets\EasyMovieTexture\Chromakey.shader" />
+    <None Include="Assets\EasyMovieTexture\Chromakey2.shader" />
+    <None Include="Assets\EasyMovieTexture\Unlit_SphereInside.shader" />
+    <None Include="Assets\EasyMovieTexture\readme.txt" />
+    <None Include="Assets\GoogleVR\Distortion\GvrDistortion.cginc" />
+    <None Include="Assets\GoogleVR\Resources\SolidColor.shader" />
+    <None Include="Assets\GoogleVR\Resources\UI\GvrReticleShader.shader" />
+    <None Include="Assets\GoogleVR\Resources\UnlitTexture.shader" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
